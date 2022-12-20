@@ -11,20 +11,17 @@ function capitalize(str) {
     return "";
   }
 
-  const newString = str.replace(/\s{2,}/g, " ").replace(/^\s|\s$/g, "");
+  const arr = str
+    .replace(/\s{2,}/g, " ")
+    .replace(/^\s|\s$/g, "")
+    .toLowerCase()
+    .split(" ");
 
-  const arr = newString.toLowerCase().split(" ");
-
-  const result = arr.map((item) => {
-    const upperLetter = item[0].toUpperCase();
-    const formattedWord = upperLetter + item.slice(1);
-
-    return formattedWord;
-  });
+  const result = arr.map((item) => item[0].toUpperCase() + item.slice(1));
 
   return result.join(" ");
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(capitalize("   молодость всё    простит   ")); // "Молодость Всё Простит"
+console.log(capitalize("молодость всё  простит")); // "Молодость Всё Простит"
