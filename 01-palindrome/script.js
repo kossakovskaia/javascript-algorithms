@@ -19,7 +19,7 @@ function palindrome(str) {
   }
 
   const arr = str
-    .replace(/[^а-яА-Я0-9]/gm, "")
+    .replace(/[^а-яА-Яa-zA-Z0-9]/gm, "")
     .toLowerCase()
     .split("");
 

@@ -9,7 +9,7 @@
 
 function uniq(arr) {
   const uniqueNumbers = arr.filter(
-    (item, index, array) => array.indexOf(item) === index
+    (item, index) => arr.indexOf(item) === index
   );
 
   return uniqueNumbers;
