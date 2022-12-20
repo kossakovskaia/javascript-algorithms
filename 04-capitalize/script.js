@@ -7,7 +7,7 @@
  */
 
 function capitalize(str) {
-  if (!str || str == " ") {
+  if (!str || str === " ") {
     return "";
   }
 
