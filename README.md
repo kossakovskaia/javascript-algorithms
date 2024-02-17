@@ -1,4 +1,4 @@
-# Небольшой сборник алгоритмических задач
+# JavaScript algorithms tasks.
 
-## Обзор
-В этом репозитории вы найдёте 14 директорий для каждой из задач. Каждая директория содержит файл `index.html` для запуска алгоритма и файл `script.js`, где вам предстоит написать решения.
+## Overview
+In this repository, you will find 14 directories for each task. Each directory contains an `index.html` file to run the algorithm and a `script.js` file where you can find the solutions.
